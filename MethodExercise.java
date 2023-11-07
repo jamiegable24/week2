@@ -4,25 +4,19 @@ import java.util.Scanner;
 
 public class MethodExercise {
 		
+	 String getNumber() {
 		Scanner scanner = new Scanner (System.in);
 		String userInput = scanner.nextLine();
 		Integer convertedInput = Integer.parseInt(userInput);
+		scanner.close();
 	
-		Integer getNumber(Integer convertedInput) {
+		//(Integer convertedInput) {
 		if (convertedInput >= 50 && convertedInput <= 300) {
-			this.convertedInput = convertedInput;
-			return convertedInput;		
+			//this.convertedInput = convertedInput;
+			return userInput;		
 			} else {		
-					
-					int i = 0;
-					while (convertedInput < 50 || convertedInput > 300) {
-						System.out.println("Oops, that number wasn't between "
-								+ "50 and 300, try again: ");
-						i = i +1;
-					}
-					System.out.println("Done");
 				
-				return convertedInput;
+				return null;
 			}	
 		}		
 }
